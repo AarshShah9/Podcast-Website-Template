@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <a href="#" className="container-fluid text-decoration-none">
-      <h1 className="h1" id="h1">
+    <Link to="/" className="container-fluid text-decoration-none">
+      <h1 className="h1" id="h1" style={{ textAlign: "center" }}>
         Suffering in Paradise
       </h1>
-    </a>
+    </Link>
   );
 }
 

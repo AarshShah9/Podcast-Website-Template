@@ -1,7 +1,11 @@
 import React from "react";
 
 function Sponsors() {
-  return <div>Sponsors</div>;
+  return (
+    <div className="text-dark bg-white" style={{ textAlign: "center" }}>
+      Want to sponsors us? Reach out @sufferinginparadisepodcast@gmail.com
+    </div>
+  );
 }
 
 export default Sponsors;

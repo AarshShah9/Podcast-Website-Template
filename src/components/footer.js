@@ -9,9 +9,9 @@ function Footer() {
             href="/"
             className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
           >
-            {/* <svg className="bi" width="30" height="24">
-              <use xlink:href="/" />
-            </svg> */}
+            <svg className="bi" width="30" height="24">
+              {/* <use href="assets/generic_sip_logo-removebg-preview.png" /> */}
+            </svg>
           </a>
           <span className="text-muted">&copy; 2021 Suffering in Paradise</span>
         </div>
