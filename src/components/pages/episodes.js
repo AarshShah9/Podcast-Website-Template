@@ -6,29 +6,18 @@ import { Credentials } from "./credentials";
 import "./episodes.css";
 
 // useEffect(() => {
-//   axios("https://accounts.spotify.com/api/token", {
+//   axios(`https://api.spotify.com/v1/shows/${showId}/episodes?market=US`, {
+//     method: "GET",
 //     headers: {
-//       "Content-Type": "application/x-www-form-urlencoded",
 //       Authorization:
-//         "Basic " + (spotify.ClientId + ":" + spotify.ClientSecret),
+//         "Bearer " +
+//         "BQBtYAs2Oq-JOri-WYCaTOsINW9QysI_ZlmARoN3gsRsf66sq_b67W7ubZndaeGEVMpVmOydqf5Nug33U3JSpdxgER0jZFVBVgzALCtaq80HStj-WgeQU0olXX32W3QWaTMhFJHZRhOMe4o4PxDhzkGMTzmPJCRBVvPiULzAjYx4dA",
+//       "Content-Type": "application/json",
 //     },
-//     data: "grant_type=client_credentials",
-//     method: "POST",
-//   }).then((tokenResponse) => {
-//     setToken(tokenResponse.data.access_token);
-
-//     axios(`https://api.spotify.com/v1/shows/${showId}/episodes?market=US`, {
-//       method: "GET",
-//       headers: {
-//         Authorization: "Bearer " + tokenResponse.data.access_token,
-//         "Content-Type": "application/json",
-//       },
-//     }).then((epidsodeResponse) => {
-//       setEpisodes(epidsodeResponse.data.items);
-//     });
+//   }).then((episodeResponse) => {
+//     setEpisodes(episodeResponse.data.items);
 //   });
-//   console.log(episodes);
-// }, [episodes, spotify.ClientId, spotify.ClientSecret]);
+// }, []);
 
 function Episodes() {
   const [episodes, setEpisodes] = useState([{}]);
@@ -37,18 +26,31 @@ function Episodes() {
   const spotify = Credentials();
 
   useEffect(() => {
-    axios(`https://api.spotify.com/v1/shows/${showId}/episodes?market=US`, {
-      method: "GET",
+    axios("https://accounts.spotify.com/api/token", {
+      method: "POST",
       headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
         Authorization:
-          "Bearer " +
-          "BQBtYAs2Oq-JOri-WYCaTOsINW9QysI_ZlmARoN3gsRsf66sq_b67W7ubZndaeGEVMpVmOydqf5Nug33U3JSpdxgER0jZFVBVgzALCtaq80HStj-WgeQU0olXX32W3QWaTMhFJHZRhOMe4o4PxDhzkGMTzmPJCRBVvPiULzAjYx4dA",
-        "Content-Type": "application/json",
+          "Basic " +
+          new Buffer(spotify.ClientId + ":" + spotify.ClientSecret).toString(
+            "base64"
+          ),
       },
-    }).then((episodeResponse) => {
-      setEpisodes(episodeResponse.data.items);
+      data: "grant_type=client_credentials",
+    }).then((tokenResponse) => {
+      setToken(tokenResponse.data.access_token);
+
+      axios(`https://api.spotify.com/v1/shows/${showId}/episodes?market=US`, {
+        method: "GET",
+        headers: {
+          Authorization: "Bearer " + token,
+          "Content-Type": "application/json",
+        },
+      }).then((episodeResponse) => {
+        setEpisodes(episodeResponse.data.items);
+      });
     });
-  }, []);
+  }, [spotify.ClientId, spotify.ClientSecret]);
 
   return (
     <div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./team.css";
-import headshotAarsh from "./assets/headshotAarsh.jpg";
-import headshotDeclan from "./assets/headshotDeclan.jpg";
+// import headshotAarsh from "./assets/headshotAarsh.jpg";
+// import headshotDeclan from "./assets/headshotDeclan.jpg";
 
 function Team() {
   return (
@@ -14,7 +14,7 @@ function Team() {
           <h6 className="h6">Host</h6>
           <img
             className="img-thumbnail"
-            src={headshotAarsh}
+            // src={headshotAarsh}
             alt="Aarsh Headshot"
             width="200px"
             height="auto"
@@ -34,7 +34,7 @@ function Team() {
           <h6 className="h6">Co-Host</h6>
           <img
             className="img-thumbnail"
-            src={headshotDeclan}
+            // src={headshotDeclan}
             alt="Declan Headshot"
             width="200px"
             height="auto"

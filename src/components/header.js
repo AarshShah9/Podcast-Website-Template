@@ -4,7 +4,7 @@ import "./header.css";
 
 function Header() {
   return (
-    <Link to="/" className="container-fluid text-decoration-none">
+    <Link to="/" className="container-fluid text-decoration-none" id="header">
       <h1 className="h1" id="h1">
         Suffering in Paradise
       </h1>
