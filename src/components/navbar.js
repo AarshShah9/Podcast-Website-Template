@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useResolvedPath, useMatch } from "react-router-dom";
+import "./navbar.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 export default function Navbar() {
   return (

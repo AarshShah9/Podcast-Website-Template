@@ -42,3 +42,8 @@
     font-size: 4.5rem;
   }
 }
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}

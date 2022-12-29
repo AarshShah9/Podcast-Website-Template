@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import EpisodeCard from "./episodeCard";
 import { Credentials } from "./credentials";
+import "./episodes.css";
 
 // useEffect(() => {
 //   axios("https://accounts.spotify.com/api/token", {

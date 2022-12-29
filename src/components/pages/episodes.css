@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+    .artwork {
+      max-width: 75%;
+      width: auto;
+      margin: auto;
+      display: block;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #bio-title {
+      padding-top: 25px;
+      font-size: 1.5rem;
+    }
+  }
+  
+  #bio-title {
+    font-size: 2.5rem;
+  }
+  
+  #episodes-embed {
+    /* overflow:scroll;  */
+    /* border: thin #000 solid;  */
+    padding: 5px;
+    /* width: 750px; */
+    height: 750px;
+    /* line-height: 3em; */
+  }
+  
+  .podcast-vectors {
+    padding: 5px;
+  }
+  
+  .podcast-vectors:hover {
+    background-color: grey;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #podcast-links {
+    text-decoration: none;
+  }
+  

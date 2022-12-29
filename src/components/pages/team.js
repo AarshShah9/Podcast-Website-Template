@@ -1,4 +1,7 @@
 import React from "react";
+import "./team.css";
+import headshotAarsh from "./assets/headshotAarsh.jpg";
+import headshotDeclan from "./assets/headshotDeclan.jpg";
 
 function Team() {
   return (
@@ -11,11 +14,11 @@ function Team() {
           <h6 className="h6">Host</h6>
           <img
             className="img-thumbnail"
-            src="assets/Aarsh_Headshot.JPG"
+            src={headshotAarsh}
             alt="Aarsh Headshot"
             width="200px"
             height="auto"
-          ></img>
+          />
           <p className="team-info text-justify">
             Originally from Regina, SK, Aarsh has always found himself
             passionate in the realm of helping others and bringing upon the
@@ -31,11 +34,11 @@ function Team() {
           <h6 className="h6">Co-Host</h6>
           <img
             className="img-thumbnail"
-            src="assets/IMG_3534.jpg"
+            src={headshotDeclan}
             alt="Declan Headshot"
             width="200px"
             height="auto"
-          ></img>
+          />
           <p className="team-info text-justify">
             Declan is from Lethbridge, Alberta, and is currently studying at the
             University of Calgary as a Richard and Lois Haskayne Legacy Scholar.
