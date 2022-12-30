@@ -25,6 +25,10 @@ This repo is a project meant to allow podcast hosts to create their on websites 
 
 ## Hosting using Github Pages
 
+## Sample Website
+
+<img src="src\images\sample_sc.png"/>
+
 ## Information About React: Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
