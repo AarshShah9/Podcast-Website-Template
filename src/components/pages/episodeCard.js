@@ -1,11 +1,12 @@
 import React from "react";
 
 function EpisodeCard(props) {
+  console.log(props);
   return (
     <div className="text-dark bg-white" style={{ padding: "15px" }}>
       <a
         className="episodes-hover"
-        href={props.Link}
+        href={"//" + props.Link}
         target="_blank"
         rel="noopener noreferrer"
         id="episode-links"
@@ -15,7 +16,7 @@ function EpisodeCard(props) {
           <div className="col-12 col-md-2 justify-content-right">
             <img
               className="artwork2 img-fluid"
-              src="assets/Artwork.png"
+              src={"assets/Artwork.png"}
               alt="Suffering in Paradise Artwork"
             ></img>
           </div>

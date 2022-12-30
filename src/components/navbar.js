@@ -1,9 +1,12 @@
 import React from "react";
-import { Link, useResolvedPath, useMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import NavItem from "./navItem";
+import { websiteLinks } from "./values";
 
 export default function Navbar() {
+  const urls = websiteLinks();
   return (
     <nav className="navbar navbar-expand-md navbar-light py-sm-2 sticky-top">
       <button
@@ -23,55 +26,17 @@ export default function Navbar() {
             <Link
               className="nav-link active col"
               id="nav-item"
-              aria-current="Home Page"
+              // aria-current="Home Page"
               to="/"
             >
               HOME
             </Link>
           </li>
-          <li className="nav-item">
-            <CustomLink
-              className="nav-link active col"
-              id="nav-item"
-              aria-current="Episodes Page"
-              to="/episodes"
-            >
-              EPISODES
-            </CustomLink>
-          </li>
-          <li className="nav-item">
-            <CustomLink
-              className="nav-link active col"
-              id="nav-item"
-              aria-current="Team Page"
-              to="/team"
-            >
-              TEAM
-            </CustomLink>
-          </li>
-          <li className="nav-item">
-            <CustomLink
-              className="nav-link active col"
-              id="nav-item"
-              aria-current="Sponsors Page"
-              to="/sponsors"
-            >
-              SPONSORS
-            </CustomLink>
-          </li>
+          {urls.map((item, index) => (
+            <NavItem to={item.to} title={item.title} key={index} />
+          ))}
         </ul>
       </div>
     </nav>
-  );
-}
-
-function CustomLink({ children, to, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
-  return (
-    <Link to={to} {...props}>
-      {children}
-    </Link>
   );
 }

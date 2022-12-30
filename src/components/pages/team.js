@@ -1,12 +1,11 @@
 import React from "react";
 import "./team.css";
-// import headshotAarsh from "./assets/headshotAarsh.jpg";
-// import headshotDeclan from "./assets/headshotDeclan.jpg";
+// import headshotAarsh from "../../src/images/headshotAarsh.jpg";
 
 function Team() {
   return (
     // <div className="text-dark bg-white" style="border: 100px; padding: 15px;">
-    <div className="text-dark bg-white">
+    <div className="text-dark bg-white" style={{ padding: "20px" }}>
       <h2 className="h2 text-center">The Team</h2>
       <div className="row text-center">
         <div className="col-12 col-md-4">
@@ -14,7 +13,7 @@ function Team() {
           <h6 className="h6">Host</h6>
           <img
             className="img-thumbnail"
-            // src={headshotAarsh}
+            src={"./assets/headshotAarsh.jpg"}
             alt="Aarsh Headshot"
             width="200px"
             height="auto"
