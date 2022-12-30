@@ -1,6 +1,6 @@
 const externalLinks = () => {
   return {
-    spoitfy: "https://open.spotify.com/show/1CAareyd5S18brittKkAb1",
+    spotify: "https://open.spotify.com/show/1CAareyd5S18brittKkAb1",
     apple:
       "https://podcasts.apple.com/ca/podcast/suffering-in-paradise/id1526019658",
     google:

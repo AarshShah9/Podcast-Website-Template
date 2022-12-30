@@ -1,12 +1,13 @@
 import React from "react";
+import { externalLinks } from "../values";
 
 function EpisodeCard(props) {
-  console.log(props);
   return (
     <div className="text-dark bg-white" style={{ padding: "15px" }}>
       <a
         className="episodes-hover"
-        href={"//" + props.Link}
+        // href={"//" + props.Link.spotify}
+        href={"//" + externalLinks.spotify}
         target="_blank"
         rel="noopener noreferrer"
         id="episode-links"

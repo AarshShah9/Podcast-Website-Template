@@ -18,62 +18,6 @@ function Episodes() {
     if (loadMore < totalEpisodes) {
       setLoadMore(loadMore + 10);
     }
-    // else {
-    //   const test = {
-    //     items: [
-    //       {
-    //         audio_preview_url:
-    //           "https://p.scdn.co/mp3-preview/447a41635ee70524a301bf612fb0f8f842d90662",
-    //         description:
-    //           "Aarsh and Declan bring on Rachel Lauer as a guest to discuss her windy path to 'success' as well as some of the issues she's faced in her life including her eating disorder. We would also like to recognize the support of Taking It Global, Service Corps Canada and the Government of Canada.",
-    //         duration_ms: 3337430,
-    //         explicit: false,
-    //         external_urls: {
-    //           spotify:
-    //             "https://open.spotify.com/episode/6aELS0cD26qbKggHnuYFlW",
-    //         },
-    //         href: "https://api.spotify.com/v1/episodes/6aELS0cD26qbKggHnuYFlW",
-    //         html_description:
-    //           "<p>Aarsh and Declan bring on Rachel Lauer as a guest to discuss her windy path to &#39;success&#39; as well as some of the issues she&#39;s faced in her life including her eating disorder.</p><br/><p>We would also like to recognize the support of Taking It Global, Service Corps Canada and the Government of Canada.</p>",
-    //         id: "6aELS0cD26qbKggHnuYFlW",
-    //         images: [
-    //           {
-    //             height: 640,
-    //             url:
-    //               "https://i.scdn.co/image/ab6765630000ba8acbfff9b0c4c87ecdd720e621",
-    //             width: 640,
-    //           },
-    //           {
-    //             height: 300,
-    //             url:
-    //               "https://i.scdn.co/image/ab67656300005f1fcbfff9b0c4c87ecdd720e621",
-    //             width: 300,
-    //           },
-    //           {
-    //             height: 64,
-    //             url:
-    //               "https://i.scdn.co/image/ab6765630000f68dcbfff9b0c4c87ecdd720e621",
-    //             width: 64,
-    //           },
-    //         ],
-    //         is_externally_hosted: false,
-    //         is_playable: true,
-    //         language: "en",
-    //         languages: ["en"],
-    //         name: "Navigating the Changes of Life (Ft. Rachel Lauer)",
-    //         release_date: "2022-05-30",
-    //         release_date_precision: "day",
-    //         resume_point: {
-    //           fully_played: false,
-    //           resume_position_ms: 0,
-    //         },
-    //         type: "episode",
-    //         uri: "spotify:episode:6aELS0cD26qbKggHnuYFlW",
-    //       },
-    //     ],
-    //   };
-    //   console.log(test.items[0].external_urls.spotify);
-    // }
   }
 
   useEffect(() => {
@@ -129,7 +73,7 @@ function Episodes() {
             </p>
             <div className="all-links">
               <a
-                href={links.spoitfy}
+                href={links.spotify}
                 target="_blank"
                 rel="noopener noreferrer"
                 id="podcast-links"
