@@ -1,13 +1,14 @@
 import React from "react";
-import { externalLinks } from "../values";
+import { externalLinks, imageLinks } from "../values";
 
 function EpisodeCard(props) {
+  const eLinks = externalLinks();
+  const iLinks = imageLinks();
   return (
     <div className="text-dark bg-white" style={{ padding: "15px" }}>
       <a
         className="episodes-hover"
-        // href={"//" + props.Link.spotify}
-        href={"//" + externalLinks.spotify}
+        href={eLinks.spotify}
         target="_blank"
         rel="noopener noreferrer"
         id="episode-links"
@@ -17,9 +18,9 @@ function EpisodeCard(props) {
           <div className="col-12 col-md-2 justify-content-right">
             <img
               className="artwork2 img-fluid"
-              src={"assets/Artwork.png"}
+              src={iLinks.artwork}
               alt="Suffering in Paradise Artwork"
-            ></img>
+            />
           </div>
           <div className="col-12 col-md-7">
             <h4 className="h4 text-left">{props.Title}</h4>

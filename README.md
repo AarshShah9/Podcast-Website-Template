@@ -5,7 +5,7 @@ This repo is a project meant to allow podcast hosts to create their on websites 
 ## Intial Setup
 
 1. Fork this repo to the Github account you want to host the website from
-2. Go into src\components\pages\values.js and replace all the social media links, Spotify API keys, etc. (You can get the spotify keys, etc by going to https://developer.spotify.com/dashboard/login and following the steps to sign up and create an app. This will generate you the required information (ClientId, ClientSecret) and for the showID simply go to the spotify page for your podcast and get the alphanumeric id at the end of the URL)
+2. Go into src\components\values.js and src\components\credentials.js and and replace all the links, Spotify API keys, etc. (You can get the spotify keys, etc by going to https://developer.spotify.com/dashboard/login and following the steps to sign up and create an app. This will generate you the required information (ClientId, ClientSecret) and for the showID simply go to the spotify page for your podcast and get the alphanumeric id at the end of the URL)
 
 ## Custom Styling
 

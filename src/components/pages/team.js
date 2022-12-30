@@ -1,10 +1,11 @@
 import React from "react";
 import "./team.css";
-// import headshotAarsh from "../../src/images/headshotAarsh.jpg";
+import { imageLinks } from "../values";
 
 function Team() {
+  const iLinks = imageLinks();
+
   return (
-    // <div className="text-dark bg-white" style="border: 100px; padding: 15px;">
     <div className="text-dark bg-white" style={{ padding: "20px" }}>
       <h2 className="h2 text-center">The Team</h2>
       <div className="row text-center">
@@ -13,7 +14,7 @@ function Team() {
           <h6 className="h6">Host</h6>
           <img
             className="img-thumbnail"
-            src={"./assets/headshotAarsh.jpg"}
+            src={iLinks.headshotAarsh}
             alt="Aarsh Headshot"
             width="200px"
             height="auto"
@@ -33,7 +34,7 @@ function Team() {
           <h6 className="h6">Co-Host</h6>
           <img
             className="img-thumbnail"
-            // src={headshotDeclan}
+            src={iLinks.headshotDeclan}
             alt="Declan Headshot"
             width="200px"
             height="auto"
@@ -53,7 +54,7 @@ function Team() {
           <h6 className="h6">Media Team</h6>
           <img
             className="img-thumbnail"
-            src="assets/jared_pic.PNG"
+            src={iLinks.jaredHeadshot}
             alt="Jared Headshot"
             width="200px"
             height="auto"

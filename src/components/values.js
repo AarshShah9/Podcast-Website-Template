@@ -10,19 +10,22 @@ const externalLinks = () => {
     tiktok: "https://www.tiktok.com/@sufferinginparadiseig",
   };
 };
+
+const imageLinks = () => {
+  return {
+    artwork: "src/images/Artwork.png",
+    headshotAarsh: "src/images/AarshHeadshot.jpg",
+    headshotDeclan: "src/images/DeclanHeadshot.jpg",
+    headshotJared: "src/images/JaredHeadshot.png",
+  };
+};
+
 const websiteLinks = () => {
   return [
     { to: "/episodes", title: "EPISODES" },
     { to: "/team", title: "TEAM" },
     { to: "/sponsors", title: "SPONSORS" },
   ];
-};
-
-const imageLinks = () => {
-  return {
-    logo: "",
-    headshotAarsh: "",
-  };
 };
 
 export { externalLinks, websiteLinks, imageLinks };
