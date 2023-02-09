@@ -1,38 +1,32 @@
+require("dotenv").config();
+
 const express = require("express");
+const mongoose = require("mongoose");
+mongoose.set("strictQuery", false); // to suppress deprecation warning
+
+const episodeRoutes = require("./routes/episodes");
+
 const app = express();
 
-app.get("/", (req, res) => {
-  res.json({ mssg: "Hello World" });
+// middleware
+app.use(express.json()); // looks to see if the request has any json data
+app.use((req, res, next) => {
+  console.log(req.path, req.method);
+  next();
 });
 
-// Listen for requests
-app.listen(4000, () => {
-  console.log("Now listening for requests!");
-});
+// routes
+app.use("/api/episodes", episodeRoutes);
 
-// const cors = require("cors");
-// const mongoose = require("mongoose");
-
-// require("dotenv").config();
-
-// const app = express();
-// const port = process.env.PORT || 5000;
-
-// app.use(cors());
-// app.use(express.json());
-
-// const uri = process.env.ATLAS_URI;
-// mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true });
-// const connection = mongoose.connection;
-// connection.once("open", () => {
-//   console.log("MongoDB database connection established successfully");
-// });
-
-// // const exercisesRouter = require("./routes/exercises");
-// // const usersRouter = require("./routes/users");
-
-// // app.use("/users", usersRouter);
-
-// app.listen(port, () => {
-//   console.log(`Server is running on port: ${port}`);
-// });
+// connect to db
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => {
+    // Listen for requests
+    app.listen(process.env.PORT, () => {
+      console.log("Connected to DB and now listening for requests!");
+    });
+  })
+  .catch((err) => {
+    console.log("Error connecting to DB: ", err);
+  });
