@@ -7,6 +7,7 @@ import Team from "./components/pages/team";
 import Sponsors from "./components/pages/sponsors";
 import Footer from "./components/footer";
 import { Routes, Route } from "react-router-dom";
+import SignIn from "./components/pages/signIn";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/episodes" element={<Episodes />} />
           <Route path="/team" element={<Team />} />
           <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/account" element={<SignIn />} />
         </Routes>
       </>
       <Footer />

@@ -25,6 +25,7 @@ const websiteLinks = () => {
     { to: "/episodes", title: "EPISODES" },
     { to: "/team", title: "TEAM" },
     { to: "/sponsors", title: "SPONSORS" },
+    { to: "/account", title: "ACCOUNT" },
   ];
 };
 
