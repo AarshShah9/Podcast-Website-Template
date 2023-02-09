@@ -41,7 +41,7 @@ function Episodes() {
         {
           method: "GET",
           headers: {
-            Authorization: "Bearer " + tokenResponse.data.access_token,
+            Authorization: "Bearer " + token,
             "Content-Type": "application/json",
           },
         }
@@ -50,7 +50,13 @@ function Episodes() {
         setTotalEpisodes(episodeResponse.data.total);
       });
     });
-  }, [spotify.ClientId, spotify.ClientSecret, loadMore, spotify.showId]);
+  }, [
+    spotify.ClientId,
+    spotify.ClientSecret,
+    loadMore,
+    spotify.showId,
+    token,
+  ]);
 
   return (
     <div>
