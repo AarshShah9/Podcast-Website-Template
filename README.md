@@ -1,3 +1,10 @@
+<a href="">![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black)</a>
+<a href="">![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)</a>
+<a href="">![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white)</a>
+<a href="">![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)</a>
+<a href="">![Spotify](https://img.shields.io/badge/Spotify-1DB954.svg?style=for-the-badge&logo=Spotify&logoColor=white)</a>
+<a href="">![Windows](https://img.shields.io/badge/Windows-0078D6.svg?style=for-the-badge&logo=Windows&logoColor=white)</a>
+
 # Podcast-Website-Template
 
 This repo is a project meant to allow podcast hosts to create their on websites for their podcasts using this React Project as a template/ starting point. Follow the the instruction to get it setup.
@@ -23,11 +30,11 @@ This repo is a project meant to allow podcast hosts to create their on websites 
 1. Go into src\components\pages\values.js and add any page links that you intend on adding this will automatically add it to the navbar. (Note that if you add too many pages you may have to adjust sizing for it to fit on the navbar)
 2. Go into App.js and add the component you created for that page as a < Route /> with the correct correct link.
 
-## Hosting using Github Pages
+<!-- ## Hosting using Github Pages -->
 
 ## Sample Website
 
-<img src="src\images\sample_sc.png"/>
+<img src="frontend\src\images\sample_sc.png"/>
 
 ## Information About React: Getting Started with Create React App
 
