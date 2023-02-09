@@ -3,10 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Home() {
   return (
-    <div className="text-dark bg-white">
+    <div className="text-dark bg-white container">
       <div className="row text-dark bg-white p-2 justify-content-center">
         <div className="col-12 col-md-6">
-          {/* <div style={{ textAlign: "center", padding: "15px" }}> */}
           <h2 className="h2 text-center my-4" id="bio-title">
             Suffering in Paradise
           </h2>

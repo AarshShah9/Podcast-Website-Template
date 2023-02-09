@@ -1,11 +1,14 @@
+const { REACT_APP_CLIENTID, REACT_APP_CLIENTSECRET, REACT_APP_SHOWID } =
+  process.env;
+
 const Credentials = () => {
   return {
     // ClientId: "Add Client ID here",
     // ClientSecret: "Add Client Secret here",
     // showId: "Add show ID here",
-    ClientId: "b7293902f13241f8b657a2076be835b8",
-    ClientSecret: "a7e00ef5a0a34b84b1d1b2bbe5e6e718",
-    showId: "1CAareyd5S18brittKkAb1",
+    ClientId: REACT_APP_CLIENTID,
+    ClientSecret: REACT_APP_CLIENTSECRET,
+    showId: REACT_APP_SHOWID,
   };
 };
 
