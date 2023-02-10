@@ -13,10 +13,10 @@ const externalLinks = () => {
 
 const imageLinks = () => {
   return {
-    artwork: "src/images/Artwork.png",
-    headshotAarsh: "src/images/AarshHeadshot.jpg",
-    headshotDeclan: "src/images/DeclanHeadshot.jpg",
-    headshotJared: "src/images/JaredHeadshot.png",
+    artwork: "/Artwork.png",
+    headshotAarsh: "/AarshHeadshot.jpg",
+    headshotDeclan: "/DeclanHeadshot.jpg",
+    headshotJared: "/JaredHeadshot.png",
   };
 };
 

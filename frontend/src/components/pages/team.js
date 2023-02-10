@@ -40,13 +40,14 @@ function Team() {
             height="auto"
           />
           <p className="team-info text-justify">
-            Declan is from Lethbridge, Alberta, and is currently studying at the
-            University of Calgary as a Richard and Lois Haskayne Legacy Scholar.
-            Declan is a member of the Big Brothers Big Sisters National Youth
-            Mentoring Advisory Council, where he works with a team of youth to
-            ensure mentorship is delivered in the most productive way possible
-            throughout Canada. Aside from his community work, Declan loves
-            sports and games, particularly volleyball, badminton, and chess.{" "}
+            Declan is from Lethbridge, Alberta, and is currently studying at
+            the University of Calgary as a Richard and Lois Haskayne Legacy
+            Scholar. Declan is a member of the Big Brothers Big Sisters
+            National Youth Mentoring Advisory Council, where he works with a
+            team of youth to ensure mentorship is delivered in the most
+            productive way possible throughout Canada. Aside from his community
+            work, Declan loves sports and games, particularly volleyball,
+            badminton, and chess.{" "}
           </p>
         </div>
         <div className="col-12 col-md-4">
@@ -54,7 +55,7 @@ function Team() {
           <h6 className="h6">Media Team</h6>
           <img
             className="img-thumbnail"
-            src={iLinks.jaredHeadshot}
+            src={iLinks.headshotJared}
             alt="Jared Headshot"
             width="200px"
             height="auto"
