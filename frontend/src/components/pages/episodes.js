@@ -59,10 +59,10 @@ function Episodes() {
   ]);
 
   return (
-    <div>
+    <div className="container">
       <div className="text-dark bg-white" style={{ padding: "15px" }}>
         <div className="row text-dark bg-white p-5 justify-content-center">
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-md-4">
             <img
               className="artwork img-fluid"
               src={ilinks.artwork}
