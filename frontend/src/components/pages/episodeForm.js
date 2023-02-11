@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { useEpisodesContext } from "../../hooks/useEpisodesContext";
+import "./episodeForm.css";
 
 function EpisodeForm() {
   const { dispatch } = useEpisodesContext();
@@ -41,12 +42,12 @@ function EpisodeForm() {
           type={"text"}
           onChange={(event) => setTitle(event.target.value)}
           value={title}
-        ></input>
+        />
       </div>
       <div onSubmit={handleSubmit} className="form-group">
         <label htmlFor="DescriptionInput">Episode Description</label>
         <textarea
-          className="form-control"
+          className={"form-control"}
           rows="5"
           id="DescriptionInput"
           aria-describedby="emailHelp"

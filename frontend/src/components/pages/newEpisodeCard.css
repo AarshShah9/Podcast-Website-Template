@@ -1,0 +1,29 @@
+#card {
+  font-size: 20px;
+  border: 1px solid #ccc;
+  background-color: #6f6f6f;
+  color: white;
+}
+
+#card h2 {
+  font-size: 20px;
+  text-align: left;
+}
+
+#card p {
+  font-size: 15px;
+  text-align: left;
+}
+
+#internalcard {
+  padding: 20px;
+  display: flex;
+}
+
+.div1 {
+  flex: 5;
+}
+
+.div2 {
+  flex: 1;
+}

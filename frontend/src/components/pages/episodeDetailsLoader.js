@@ -17,22 +17,20 @@ function EpisodeDetailsLoader() {
       }
     };
     fetchEpisodes();
-  });
+  }, [dispatch]); // issue with refreshing
 
   return (
-    <div className="container">
+    <div className="container-fluid loader">
       <div className="row text-center">
-        <div className="col-12 col-md-4">
-          <section className="created_episodes">
-            {episodes &&
-              episodes.map((episode) => (
-                <NewEpisodeCard key={episode._id} episode={episode} />
-              ))}
-          </section>
-          <section className="new_episode">
-            <EpisodeForm />
-          </section>
-        </div>
+        <section className="col-6 col-sm">
+          {episodes &&
+            episodes.map((episode) => (
+              <NewEpisodeCard key={episode._id} episode={episode} />
+            ))}
+        </section>
+        <section className="col-6">
+          <EpisodeForm />
+        </section>
       </div>
     </div>
   );

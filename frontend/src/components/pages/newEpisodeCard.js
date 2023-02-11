@@ -1,5 +1,6 @@
 import React from "react";
 import { useEpisodesContext } from "../../hooks/useEpisodesContext";
+import "./newEpisodeCard.css";
 
 function NewEpisodeCard(props) {
   const { dispatch } = useEpisodesContext();
@@ -15,10 +16,18 @@ function NewEpisodeCard(props) {
   };
 
   return (
-    <div>
-      <h2>{props.episode.title}</h2>
-      <p>{props.episode.description}</p>
-      <span onClick={handleClick}>Delete</span>
+    <div id="card">
+      <div id="internalcard">
+        <div className="div1">
+          <h2>{props.episode.title}</h2>
+          <p>{props.episode.description}</p>
+        </div>
+        <div className="div2">
+          <button className="btn btn-dark" onClick={handleClick}>
+            Delete
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

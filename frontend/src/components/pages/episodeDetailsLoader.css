@@ -1,12 +1,4 @@
-/* .episode_details {
-  display: flex;
-  flex-direction: row;
+.loader {
+  padding-top: 25px;
+  padding-left: 50px;
 }
-
-.created_episodes {
-  flex: 1;
-}
-
-.new_episode {
-  flex: 1;
-} */
