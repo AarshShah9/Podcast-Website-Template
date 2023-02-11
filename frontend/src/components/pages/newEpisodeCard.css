@@ -1,7 +1,7 @@
 #card {
   font-size: 20px;
   border: 1px solid #ccc;
-  background-color: #6f6f6f;
+  background-color: #a9a9a9;
   color: white;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .div1 {
-  flex: 5;
+  flex: 7;
 }
 
 .div2 {

@@ -32,7 +32,7 @@ function EpisodeForm() {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <h3>Add a New Episode</h3>
+      <h3>Add a New Episode Idea</h3>
       <div className="form-group">
         <label htmlFor="TitleInput">Episode Title</label>
         <input
