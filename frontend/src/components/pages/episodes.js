@@ -1,9 +1,9 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import EpisodeCard from "./episodeCard";
-import { externalLinks, imageLinks } from "../values";
-import { Credentials } from "../credentials";
+import EpisodeCard from "./pages/episodeCard";
+import { externalLinks, imageLinks } from "../components/values";
+import { Credentials } from "../components/credentials";
 import "./episodes.css";
 import { Buffer } from "buffer";
 
