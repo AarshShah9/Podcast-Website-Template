@@ -1,0 +1,11 @@
+input.error {
+  border: 1px solid #e7195a;
+}
+
+label {
+  text-align: left;
+}
+
+form {
+  padding-right: 50px;
+}

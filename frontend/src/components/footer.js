@@ -5,7 +5,7 @@ import { externalLinks } from "./values";
 function Footer() {
   const links = externalLinks();
   return (
-    <div id="footer">
+    <div id="footer" className="mt-auto">
       <div className="container">
         <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div className="col-md-4 d-flex align-items-center">
@@ -22,7 +22,11 @@ function Footer() {
             </span>
           </div>
           <ul className="nav col-md-4 justify-content-end">
-            <a href={links.instagram} target="_blank" rel="noopener noreferrer">
+            <a
+              href={links.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

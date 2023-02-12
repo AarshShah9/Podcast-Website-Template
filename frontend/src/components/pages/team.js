@@ -55,7 +55,7 @@ function Team() {
           <h6 className="h6">Media Team</h6>
           <img
             className="img-thumbnail"
-            src={iLinks.jaredHeadshot}
+            src={iLinks.headshotJared}
             alt="Jared Headshot"
             width="200px"
             height="auto"
