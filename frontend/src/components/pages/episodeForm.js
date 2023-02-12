@@ -57,10 +57,11 @@ function EpisodeForm() {
           value={description}
         ></textarea>
       </div>
-
-      <button type="submit" className="btn btn-dark">
-        Submit
-      </button>
+      <div id="submitbutton">
+        <button type="submit" className="btn btn-dark">
+          Submit
+        </button>
+      </div>
       {error && <div className="alert alert-danger">{error}</div>}
     </form>
   );

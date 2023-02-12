@@ -9,3 +9,15 @@ label {
 form {
   padding-right: 50px;
 }
+
+#submitbutton {
+  padding-top: 20px;
+}
+
+label {
+  padding-top: 20px;
+}
+
+.form-group {
+  padding-left: 25px;
+}
